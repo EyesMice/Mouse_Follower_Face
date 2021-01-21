@@ -3,7 +3,7 @@ var render = canvas.getContext('2d');
 var height;
 var width;
 var mouseX;
-var mouzeY;
+var mouseY;
 const img0 = document.getElementById("face0");
 const img1 = document.getElementById("face1");
 const img2 = document.getElementById("face2");
