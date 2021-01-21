@@ -42,62 +42,42 @@ function drawFace() {
     var y = window.innerHeight / 2 - size / 2;
     render.beginPath();
     render.rect(x, y, size, size);
-    //render.stroke();
     switch (true) {
             //topleft
         case mouseY < y && mouseX < x:
-            //render.fillStyle = "#FF0000";
-            //render.fillStyle = "rgba(0, 0, 0, 0)";
             render.drawImage(img0,x,y);
             break;
             //top middle
         case mouseY < y && mouseX > x && mouseX < x+size:
-            //render.fillStyle = "#0000FF";
-            //render.fillStyle = "rgba(0, 0, 0, 0)";
             render.drawImage(img1,x,y);
             break;
             //top right
         case mouseY < y && mouseX > x+size / 2:
-            //render.fillStyle = "#FFFF00";
-            //render.fillStyle = "rgba(0, 0, 0, 0)";
             render.drawImage(img2,x,y);
             break;
             //middle left
         case mouseY > y && mouseY < y+size && mouseX < x:
-            //render.fillStyle = "#000000";
-            //render.fillStyle = "rgba(0, 0, 0, 0)";
             render.drawImage(img3,x,y);
             break;
             //middle right
         case mouseY > y && mouseY < y+size && mouseX > x+size:
-            //render.fillStyle = "#00FF00";
-            //render.fillStyle = "rgba(0, 0, 0, 0)";
             render.drawImage(img5,x,y);
             break;
             //bottom left
         case mouseY > y+size && mouseX < x:
-            //render.fillStyle = "#999966";
-            //render.fillStyle = "rgba(0, 0, 0, 0)";
             render.drawImage(img6,x,y);
             break;
              //bottom Middle
         case mouseY > y+size && mouseX > x && mouseX < x+size:
-            //render.fillStyle = "#993d00";
-           // render.fillStyle = "rgba(0, 0, 0, 0)";
             render.drawImage(img7,x,y);
             break;
             //bottom Right
         case mouseY > y+size && mouseX > x+size:
-            //render.fillStyle = "#FF6600";
-            //render.fillStyle = "rgba(0, 0, 0, 0)";
             render.drawImage(img8,x,y);
             break;
             //middle
         default:
-            //render.fillStyle = "#FFFFFF";
-            //render.fillStyle = "rgba(0, 0, 0, 0)";
             render.drawImage(img4,x,y);
             break;
     }
-    //render.fillRect(x, y, size, size);
 }
